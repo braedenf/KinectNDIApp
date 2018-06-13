@@ -41,7 +41,7 @@ class ofApp : public ofBaseApp{
 		void HostFieldChanged();
 
 		// BG
-		ofImage bgCB; // background checkerboard
+		//ofImage bgCB; // background checkerboard
 
 					  // offscreen buffers (frame buffer object)
 		ofFbo fboDepth; // draw to for spout, setup at Kinect native 512x

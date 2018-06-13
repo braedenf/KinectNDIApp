@@ -108,7 +108,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
-      <AdditionalDependencies>Processing.NDI.Lib.x64;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>Processing.NDI.Lib.x86.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>..\..\..\addons\ofxNDI\libs\NDI\Libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <PostBuildEvent />
@@ -130,7 +130,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
-      <AdditionalDependencies>Processing.NDI.Lib.x64;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>Processing.NDI.Lib.x64.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>..\..\..\addons\ofxNDI\libs\NDI\Libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <PostBuildEvent />
@@ -154,7 +154,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
-      <AdditionalDependencies>Processing.NDI.Lib.x64;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>Processing.NDI.Lib.x86.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>..\..\..\addons\ofxNDI\libs\NDI\Libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <PostBuildEvent />
@@ -177,7 +177,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
-      <AdditionalDependencies>Processing.NDI.Lib.x64;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>Processing.NDI.Lib.x64.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>..\..\..\addons\ofxNDI\libs\NDI\Libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <PostBuildEvent />

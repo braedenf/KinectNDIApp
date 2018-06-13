@@ -15,7 +15,7 @@ int main( ){
 	ofGLFWWindowSettings settings;
 	//settings.iconified = true;
 	settings.resizable = false;
-	settings.setSize(1920, 1080);
+	settings.setSize(1680, 1050);
 	ofCreateWindow(settings);
 	return ofRunApp(new ofApp);
 

@@ -85,8 +85,8 @@ void ofApp::setup() {
 
 	OSCgroup.setup("OSC");
 	OSCgroup.add(jsonGrouped.setup("OSC as JSON", true));
-	OSCgroup.add(HostField.setup("Host ip", "localhost"));
-	OSCgroup.add(oscPort.setup("Output port", 1234));
+	OSCgroup.add(HostField.setup("Host ip", "10.249.59.100"));
+	OSCgroup.add(oscPort.setup("Output port", 8080));
 	OSCgroup.add(oscPortIn.setup("Input port", 4321));
 	gui.add(&OSCgroup);
 
@@ -428,17 +428,17 @@ void ofApp::update() {
 	{
 		//// Note that for this we need a reference of which joints are connected to each other.
 		//// We call this the 'boneAtlas', and you can ask for a reference to this atlas whenever you like
-		//auto bodies = kinect.getBodySource()->getBodies();
-		//auto boneAtlas = ofxKinectForWindows2::Data::Body::getBonesAtlas();
+		auto bodies = kinect.getBodySource()->getBodies();
+		auto boneAtlas = ofxKinectForWindows2::Data::Body::getBonesAtlas();
 
-		//for (auto body : bodies) {
-		//	for (auto bone : boneAtlas) {
-		//		auto firstJointInBone = body.joints[bone.first];
-		//		auto secondJointInBone = body.joints[bone.second];
+		for (auto body : bodies) {
+			for (auto bone : boneAtlas) {
+				auto firstJointInBone = body.joints[bone.first];
+				auto secondJointInBone = body.joints[bone.second];
 
 		//		//now do something with the joints
-		//	}
-		//}
+			}
+		}
 	}
 
 	//
